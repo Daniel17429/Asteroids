@@ -56,7 +56,7 @@ def main():
             for shoot in shoots:
                 if shoot.is_colliding(obj):
                     pygame.sprite.Sprite.kill(shoot)
-                    pygame.sprite.Sprite.kill(obj)
+                    obj.split()
                 
         for obj in drawable:
             obj.draw(screen)
